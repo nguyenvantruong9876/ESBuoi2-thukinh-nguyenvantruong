@@ -41,7 +41,8 @@ let showhtml = (id) =>{
         
         
         document.querySelector(".vglasses__info").style.display = "block";
-        
+       
+      
         
 
 
@@ -53,7 +54,16 @@ let showhtml = (id) =>{
      
 }
 
-
+let removeGlasses = (gla) => {
+    if(gla == false){
+        document.querySelector(".img-fluid").style.display="block";
+        document.getElementById("glassesInfo").style.display="block";  
+    }
+    else{
+        document.querySelector(".img-fluid").style.display="none";
+        document.getElementById("glassesInfo").style.display="none";
+    }
+}
 
 
 
